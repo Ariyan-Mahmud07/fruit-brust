@@ -11,6 +11,8 @@
     <!-- tailwind and daisy ui  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- fontawesome  -->
+<script src="https://kit.fontawesome.com/facd3c81a0.js" crossorigin="anonymous"></script>
 <style>
     .font-lato{
         font-family: 'Lato', sans-serif;
@@ -18,10 +20,54 @@
 </style>
 </head>
 <body class="font-lato">
-    <header>
-
-        <nav></nav>
-
+    <header class="container mx-auto lg:mt-5">
+        <!-- navbar  -->
+        <nav class="lg:bg-[#F85559] lg:rounded-full lg:p-2">
+            <div class="navbar">
+              <div class="navbar-start">
+                <div class="dropdown">
+                  <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  </label>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                    <div class="flex items-center">
+                      <input class="input w-full max-w-xs"type="text" placeholder="Search here" />
+                      <i class="fa-solid text-xl -ml-10  fa-magnifying-glass"></i>
+                    </div>
+                  </ul>
+                </div>
+                <div class="hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-white text-lg">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="navbar-center justify-center items-center hidden lg:flex gap-2">
+                <img src="./images/logo.png" alt="" class="max-w-[50px]" />
+                <a class="text-white text-5xl text-right font-bold">Fruit Burst</a>
+              </div>
+              <div class="navbar-end hidden lg:flex">
+                <input type="text" placeholder="Search here" class="input w-full max-w-xs rounded-full" />
+                <i class="fa-solid text-xl -ml-8 pr-5  fa-magnifying-glass"></i>
+              </div>
+              <!-- mobile devices -->
+              <div class="navbar-end flex justify-center items-center  lg:hidden gap-2">
+                <img src="./images/logo.png" alt="" class="max-w-[30px]" />
+                <a class="text-xl  text-right font-bold">Fruit Burst</a>
+              </div>
+            </div>
+          </nav>
+          <!-- banner section  -->
+          <section>
+            
+          </section>
     </header>
 
     <main>
